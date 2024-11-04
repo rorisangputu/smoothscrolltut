@@ -1,7 +1,8 @@
 'use client'
 import { useEffect } from "react";
 import styles from "./page.module.css";
-import Index from "../components/Intro";
+import Intro from "../components/Intro";
+import Description from "../components/Description/Index";
 
 export default function Home() {
 
@@ -16,7 +17,8 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      <Index/>
+      <Intro />
+      <Description/>
     </div>
   );
 }

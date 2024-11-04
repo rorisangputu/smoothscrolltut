@@ -38,7 +38,7 @@ const Index = () => {
       <div className={styles.introContainer}>
         <div ref={introImage} data-scroll data-scroll-speed='0.3' className={styles.introImage}>
           <Image
-            src={'/images/horizon.jpg'}
+            src={'/images/alpaca.jpg'}
             fill={true}
             alt="background image"
           />
