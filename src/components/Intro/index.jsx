@@ -22,6 +22,7 @@ const Index = () => {
     })
 
     tl.from(backgroundImage.current, { clipPath: "inset(15%)" })
+      .to(introImage.current, { height: '200px' }, 0)
   }, [])
 
   return (
