@@ -31,3 +31,7 @@
     height: 475px;
     filter: brightness(70%);
 }
+
+.introImage img{
+    object-fit: cover;
+}
