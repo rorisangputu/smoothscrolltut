@@ -9,6 +9,16 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const Index = () => {
     const [selectedProject, setSelectedProject] = useState(0);
     const imageContainer = useRef(null)
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.create({
+            trigger: imageContainer.current,
+            start: "-=100px",
+            end: document.body.offsetHeight,
+            pin: true
+        })
+    }, [])
     return (
         <div className={styles.projects}>
             <div className={styles.projectDescription}>
