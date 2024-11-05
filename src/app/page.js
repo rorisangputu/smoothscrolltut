@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Intro from "../components/Intro";
 import Description from "../components/Description/Index";
 import Projects from "../components/Projects/index"
-
+import Text from '../components/TextAnimation/Index'
 export default function Home() {
 
   useEffect(() => {
@@ -20,7 +20,8 @@ export default function Home() {
     <div className={styles.page}>
       <Intro />
       <Description />
-      <Projects/>
+      <Projects />
+      <Text/>
     </div>
   );
 }
