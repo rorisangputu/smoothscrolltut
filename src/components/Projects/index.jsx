@@ -15,8 +15,9 @@ const Index = () => {
         ScrollTrigger.create({
             trigger: imageContainer.current,
             start: "-=100px",
-            end: document.body.offsetHeight,
-            pin: true
+            end: () => `+=${imageContainer.current.offsetHeight}`, // Dynamically end based on container height
+            pin: true,
+            pinSpacing: false // Removes extra space after pinning
         })
     }, [])
     return (
