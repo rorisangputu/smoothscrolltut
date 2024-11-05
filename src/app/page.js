@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import styles from "./page.module.css";
 import Intro from "../components/Intro";
 import Description from "../components/Description/Index";
+import Projects from "../components/Projects/index"
 
 export default function Home() {
 
@@ -18,7 +19,8 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Intro />
-      <Description/>
+      <Description />
+      <Projects/>
     </div>
   );
 }
